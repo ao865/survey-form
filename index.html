@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <body>
+  	<header>
+  		<title>Survey Form</title>
+  		<link rel="stylesheet" type="text/css" href="style.css">
+  	</header>
+    <h1 id="title">Survey Form</h1>
+    <div id="out">
+    <form id="survey-form" method="GET">
+      <p id="description">Let us know how we can improve your experience</p>
+      <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">* Name: </label>
+      </div>
+      <div class="right">
+      <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+    </div>
+      </div>
+      <div class="rowTab">
+    <div class="labels">
+        <label id="email-label" for="email">* Email: </label>
+      </div>
+      <div class="right">
+    <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email" required>
+      </div>
+      </div>
+      <div class="rowTab">
+    <div class="labels">
+        <label id="number-label" for="age">* Age: </label>
+      </div>
+      <div class="right">
+    <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+      </div>
+      </div>
+      <div class="rowTab">
+      <div class="labels">
+        <label for="role">Which option best describes your current role? </label>
+      </div>
+      <div class="right">
+    <select name="role" id="dropdown" class="dropdown">
+      <option disabled value>Select an option</option>
+      <option value="Student">Student</option>
+      <option value="Employed">Employed</option>
+      <option value="Retired">Retired</option>
+      <option value="Prefer not to say">Prefer not to say</option>
+    </select>
+      </div>
+      </div>
+      <div class="rowTab">
+    <div class="labels">
+        <label for="recommend">Will you recommend us to others? </label>
+      </div>
+      <div class="right">
+    <ul style="list-style: none;">
+      <li class="radio"><label><input name="radio-buttons" value="1" type="radio" class="recommend" >
+        Yes</label></li>
+       <li class="radio"><label><input name="radio-buttons" value="2" type="radio" class="recommend" >
+         Maybe</label></li>
+      <li class="radio"><label><input name="radio-buttons" value="3" type="radio" class="recommend" >
+        No</label></li>
+    </ul>
+      </div>
+      </div>
+      <div class="rowTab">
+      <div class="labels">
+    <label for="improve">What can we do to improve your experience?<br>(Check all that apply): </label>
+      </div>
+      <div class="right">
+<ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Lower Prices</label></li>
+          <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">More Support Options</li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Longer Warranty</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Greater Accessory Selection</label></li>
+          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Increased Hours</label></li>
+          <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Community Suggestion Page</label></li>
+          <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">Support Articles</label></li>       
+    </ul>
+      </div>
+      </div>
+      <div class="rowTab">
+    <div class="labels">
+        <label for="comments">Comments and Suggestions</label>
+      </div>
+      <div class="right">
+<textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+      </div>
+ <button id="submit" type="submit">Submit</button>
+    </form>
+    </div>
+  </body>
+</html>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
